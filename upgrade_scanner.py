@@ -54,7 +54,7 @@ def find_replacement(item,ref):
             if (item == row["Original"] or item == row["Original"].upper() or item == row["Original"].lower()): 
                 replacement = row["Replacement"]
                 login("Replace by :"+replacement)
-                x.close()
+        x.close()
     finally:
         if replacement == "": login("No replacement was found")
         return replacement
